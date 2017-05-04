@@ -1,0 +1,67 @@
+
+<div>
+    <h2><span data-translate="battleApp.player.detail.title">Player</span> {{vm.player.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="battleApp.player.name">Name</span></dt>
+        <dd>
+            <span>{{vm.player.name}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.mail">Mail</span></dt>
+        <dd>
+            <span>{{vm.player.mail}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.password">Password</span></dt>
+        <dd>
+            <span>{{vm.player.password}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.image">Image</span></dt>
+        <dd>
+            <span>{{vm.player.image}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.hp">Hp</span></dt>
+        <dd>
+            <span>{{vm.player.hp}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.money">Money</span></dt>
+        <dd>
+            <span>{{vm.player.money}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.strength">Strength</span></dt>
+        <dd>
+            <span>{{vm.player.strength}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.agility">Agility</span></dt>
+        <dd>
+            <span>{{vm.player.agility}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.attack">Attack</span></dt>
+        <dd>
+            <span>{{vm.player.attack}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.defence">Defence</span></dt>
+        <dd>
+            <span>{{vm.player.defence}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.fatigue">Fatigue</span></dt>
+        <dd>
+            <span>{{vm.player.fatigue}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.player.belong">Belong</span></dt>
+        <dd>
+            <span>{{vm.player.belong}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="player-detail.edit({id:vm.player.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

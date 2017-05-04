@@ -1,0 +1,23 @@
+{
+    "battleApp": {
+        "things" : {
+            "home": {
+                "title": "Things",
+                "createLabel": "Create a new Things",
+                "createOrEditLabel": "Create or edit a Things"
+            },
+            "created": "A new Things is created with identifier {{ param }}",
+            "updated": "A Things is updated with identifier {{ param }}",
+            "deleted": "A Things is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Things {{ id }}?"
+            },
+            "detail": {
+                "title": "Things"
+            },
+            "pid": "Pid",
+            "type": "Type",
+            "belong": "Belong"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<div class="commonLoginAbsolute panel panel-default">
+		<div class="panel-heading"><i>what's up,man?</i></div>
+		<div class="panel-body" style="width: 300px;line-height: 150%;">
+			<form>
+				<img style="width: 100%;text-align: center;" src="assets/image/bigBing.jpg" />
+				<hr />
+				<label style="width: 100px;" for="mail">mail: </label>
+				<input required type="email" name="mail" ng-model="login.mail" placeholder="mail"/>
+				<hr />
+				<label style="width: 100px;" for="password">password: </label>
+				<input required type="password" name="password" id="password" ng-model="login.password" placeholder="password"/>
+				<hr />
+				<strong><i>{{errorInfo}}</i></strong>
+				<button type="submit" class="btn btn-default pull-right" ng-click="loginForm(login)">login</button>
+			</form>
+		</div>
+	</div>
+	
+<style type="text/css">
+	.commonLoginAbsolute {
+		right: 10%;
+		top: calc(8% + 50px);
+		position: fixed;
+		opacity: 30%;
+	}
+</style>

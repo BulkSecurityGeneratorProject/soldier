@@ -1,0 +1,24 @@
+angular.module('battle')
+.config(function($stateProvider){
+	$stateProvider.state('app.start',{
+		url:'/start',
+		views:{
+			'playerInfo':{
+				templateUrl:'app/start/player/player.html',
+				controller:'playerInfo'
+			},
+			'things':{
+				templateUrl:'app/start/things/things.html',
+				controller:'things'
+			},
+			'tips':{
+				templateUrl:'app/start/tips/tips.html',
+				controller:'tips'
+			},
+			'logged':{
+				templateUrl:'app/head/logged/logged.html',
+				controller:'actions'
+			}
+		}
+	})
+})

@@ -1,0 +1,98 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPlayerLabel" data-translate="battleApp.player.home.createOrEditLabel">Create or edit a Player</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.player.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.player.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.player.name"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.mail" for="field_mail">Mail</label>
+            <input type="text" class="form-control" name="mail" id="field_mail"
+                    ng-model="vm.player.mail"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.password" for="field_password">Password</label>
+            <input type="text" class="form-control" name="password" id="field_password"
+                    ng-model="vm.player.password"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.image" for="field_image">Image</label>
+            <input type="text" class="form-control" name="image" id="field_image"
+                    ng-model="vm.player.image"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.hp" for="field_hp">Hp</label>
+            <input type="number" class="form-control" name="hp" id="field_hp"
+                    ng-model="vm.player.hp"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.money" for="field_money">Money</label>
+            <input type="number" class="form-control" name="money" id="field_money"
+                    ng-model="vm.player.money"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.strength" for="field_strength">Strength</label>
+            <input type="number" class="form-control" name="strength" id="field_strength"
+                    ng-model="vm.player.strength"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.agility" for="field_agility">Agility</label>
+            <input type="number" class="form-control" name="agility" id="field_agility"
+                    ng-model="vm.player.agility"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.attack" for="field_attack">Attack</label>
+            <input type="number" class="form-control" name="attack" id="field_attack"
+                    ng-model="vm.player.attack"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.defence" for="field_defence">Defence</label>
+            <input type="number" class="form-control" name="defence" id="field_defence"
+                    ng-model="vm.player.defence"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.fatigue" for="field_fatigue">Fatigue</label>
+            <input type="number" class="form-control" name="fatigue" id="field_fatigue"
+                    ng-model="vm.player.fatigue"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="battleApp.player.belong" for="field_belong">Belong</label>
+            <input type="number" class="form-control" name="belong" id="field_belong"
+                    ng-model="vm.player.belong"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

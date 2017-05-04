@@ -1,0 +1,38 @@
+<div class="commonLoginAbsolute panel panel-default">
+		<div class="panel-heading"><i>new soldier?</i></div>
+		<div class="panel-body" style="width: 300px;line-height: 150%;">
+			<form name="form">
+				<label style="width: 100px;" for="name">name: </label>
+				<input ng-blur="filte()" ng-pattern="/(\w|\d|_)+/" required type="text" name="name" ng-model="signUp.name" placeholder="name"/>
+				<hr />
+				<label style="width: 100px;" for="mail">mail: </label>
+				<input ng-blur="filte()" type="email" required type="text" name="mail" ng-model="signUp.mail" placeholder="mail"/>
+				<hr />
+				<label style="width: 100px;" for="password">password: </label>
+				<input ng-blur="filte()" required type="password" name="password" ng-model="signUp.password" placeholder="password"/>
+				<hr />
+				<label style="width: 100px;" for="repeat">repeat: </label>
+				<input ng-blur="filte()" required type="password" name="repeat" ng-model="repeat" placeholder="repeat the password"/>
+				<hr />
+					<ul style="height: 1em; color: red;" ng-show="ifError" ng-repeat="a in errorInfo">
+						<li><i>{{a}}</i></li>
+					</ul>
+				<button type="submit" class="btn btn-default pull-right" ng-click="signUpForm()">sign up</button>
+			</form>
+		</div>
+	</div>
+	
+<style type="text/css">
+	.commonLoginAbsolute {
+		right: 10%;
+		top: calc(8% + 50px);
+		position: fixed;
+		opacity: 30%;
+	}
+	input .ng-invalid{
+		border: red solid 1px;
+	}
+	li{
+		list-style: none;
+	}
+</style>

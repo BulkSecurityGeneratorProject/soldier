@@ -1,0 +1,17 @@
+<div>
+	<div ui-view="common"></div>
+</div>
+<div class="startLayout container">
+	<br />
+	<div class="row col-md-offset-1">
+		<div ui-view="playerInfo" class="col-md-3" style="min-width: 370px;"></div>
+		<div ui-view="things" class="col-md-3" style="min-width: 370px;"></div>	
+		<div ui-view="tips" class="col-md-3" style="min-width: 250px;"></div>	
+	</div>
+</div>
+
+<style type="text/css">
+	.startLayout{
+		margin: auto;
+	}
+</style>

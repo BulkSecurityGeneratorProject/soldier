@@ -1,0 +1,14 @@
+version: '2'
+services:
+    battle-app:
+        image: battle
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://battle-postgresql:5432/battle
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    battle-postgresql:
+        extends:
+            file: postgresql.yml
+            service: battle-postgresql

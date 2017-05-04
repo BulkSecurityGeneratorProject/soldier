@@ -1,0 +1,14 @@
+angular.module('battle')
+.config(function($stateProvider){
+	$stateProvider.state('app.common',{
+		views:{
+			'common':{
+				templateUrl:"app/content/common/common.html",
+				controller:'common'
+			},
+			'logging':{
+				templateUrl:"app/head/logging/logging.html"
+			}
+		}
+	})
+})

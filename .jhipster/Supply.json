@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "hp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fatigue",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170502150159",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "supply",
+    "pagination": "no"
+}

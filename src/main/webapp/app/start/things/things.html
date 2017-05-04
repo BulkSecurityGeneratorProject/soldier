@@ -1,0 +1,32 @@
+<div style="width: 360px;">
+	<ul class="nav nav-tabs">
+		<li class="active" >
+			<a role="tab" data-toggle="tab" href="#arm">武器</a>
+		</li>
+		<li>
+			<a role="tab" data-toggle="tab" href="#supply">补给</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane in active" id="arm">
+			<ul class="list-group" style="height: 492px;overflow-y: scroll;">
+				<li class="list-group-item" ng-repeat="t in arm">{{t[1]}}
+					<button class="btn btn-sm pull-right" ng-click="desert($index)">丢弃</button>
+					<button class="btn btn-sm pull-right" ng-click="ware($index)">装备</button>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-pane " id="supply">
+			<ul class="list-group" style="height: 492px;overflow-y: scroll;">
+				<li class="list-group-item" ng-repeat="t in supply">{{t[1]}}
+					<button class="btn btn-sm pull-right" ng-click="use($index)">使用</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	ul li{
+		list-style: none;
+	}
+</style>

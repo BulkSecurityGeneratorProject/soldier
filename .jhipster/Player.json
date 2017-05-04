@@ -1,0 +1,59 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "image",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "money",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "strength",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "agility",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "attack",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "defence",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fatigue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "belong",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20170502150035",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "player",
+    "pagination": "no"
+}

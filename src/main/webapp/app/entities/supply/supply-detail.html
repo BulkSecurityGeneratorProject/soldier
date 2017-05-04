@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="battleApp.supply.detail.title">Supply</span> {{vm.supply.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="battleApp.supply.name">Name</span></dt>
+        <dd>
+            <span>{{vm.supply.name}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.supply.price">Price</span></dt>
+        <dd>
+            <span>{{vm.supply.price}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.supply.hp">Hp</span></dt>
+        <dd>
+            <span>{{vm.supply.hp}}</span>
+        </dd>
+        <dt><span data-translate="battleApp.supply.fatigue">Fatigue</span></dt>
+        <dd>
+            <span>{{vm.supply.fatigue}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="supply-detail.edit({id:vm.supply.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

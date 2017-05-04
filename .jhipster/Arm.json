@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "attack",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "defence",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170502150115",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "arm",
+    "pagination": "no"
+}

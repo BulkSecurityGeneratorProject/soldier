@@ -1,0 +1,14 @@
+<div>
+	<div style="width: 360px;text-align: center;" class="well well-lg">
+		<img src="{{ playerInfo.image }}" class="img-circle" style="width: 300px;height: 300px;" />
+	</div>
+	<div id="attributes" class="list-group" style="width: 360px;">
+		<div ng-repeat="(a,b) in playerInfo" ng-show="$index < 8" class="list-group-item" style="width: 50%;display: inline-block;">
+			<span style="width: 4em;display: inline-block;">
+				<i>{{a}}</i>
+			</span> :&nbsp;&nbsp;{{b}}
+		</div>
+	</div>
+</div>
+
+

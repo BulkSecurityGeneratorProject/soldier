@@ -1,0 +1,24 @@
+{
+    "battleApp": {
+        "arm" : {
+            "home": {
+                "title": "Arms",
+                "createLabel": "Create a new Arm",
+                "createOrEditLabel": "Create or edit a Arm"
+            },
+            "created": "A new Arm is created with identifier {{ param }}",
+            "updated": "A Arm is updated with identifier {{ param }}",
+            "deleted": "A Arm is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Arm {{ id }}?"
+            },
+            "detail": {
+                "title": "Arm"
+            },
+            "name": "Name",
+            "price": "Price",
+            "attack": "Attack",
+            "defence": "Defence"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+angular.module('battle')
+.config(function($stateProvider){
+	$stateProvider.state('app.common.login',{
+		url:'/login',
+		views:{
+			'login':{
+				templateUrl:'app/content/login/login.html',
+				controller:'login'
+			},
+		}
+	})
+	.state('app.common.signUp',{
+		url:'/signUp',
+		views:{
+			'signUp':{
+				templateUrl:'app/content/signUp/signUp.html',
+				controller:'signUp'
+			}
+		}
+	})
+})
